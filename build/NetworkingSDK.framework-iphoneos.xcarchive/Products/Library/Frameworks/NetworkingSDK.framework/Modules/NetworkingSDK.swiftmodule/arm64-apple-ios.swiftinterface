@@ -1,0 +1,53 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios17.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NetworkingSDK
+import Combine
+import Foundation
+@_exported import NetworkingSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class NetworkManager {
+  public static let shared: NetworkingSDK.NetworkManager
+  public var session: Foundation.URLSession
+  @available(iOS 13.0, *)
+  public func fetchPopularMovies(page: Swift.Int = 1) -> Combine.AnyPublisher<[NetworkingSDK.Movie], any Swift.Error>
+  @available(iOS 13.0, *)
+  public func fetchLatestMovies(page: Swift.Int = 1) -> Combine.AnyPublisher<[NetworkingSDK.Movie], any Swift.Error>
+  public func fetchMovieDetails(movieId: Swift.Int, completion: @escaping (Swift.Result<NetworkingSDK.MovieDetails, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct MovieResponse : Swift.Codable {
+  public let page: Swift.Int
+  public let results: [NetworkingSDK.Movie]
+  public let totalPages: Swift.Int, totalResults: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Movie : Swift.Codable {
+  public let adult: Swift.Bool
+  public let backdropPath: Swift.String?
+  public let genreIDS: [Swift.Int]
+  public let id: Swift.Int
+  public let originalTitle: Swift.String, overview: Swift.String
+  public let popularity: Swift.Double
+  public let posterPath: Swift.String?, releaseDate: Swift.String?, title: Swift.String?
+  public let video: Swift.Bool
+  public let voteAverage: Swift.Double
+  public let voteCount: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieDetails : Swift.Codable {
+  public let id: Swift.Int
+  public let title: Swift.String
+  public let overview: Swift.String
+  public let release_date: Swift.String
+  public let runtime: Swift.Int
+  public let vote_average: Swift.Double
+  public let vote_count: Swift.Int
+  public let backdrop_path: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}

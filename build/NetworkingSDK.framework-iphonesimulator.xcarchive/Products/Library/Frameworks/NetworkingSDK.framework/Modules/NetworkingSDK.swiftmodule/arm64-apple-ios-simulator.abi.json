@@ -1,0 +1,1971 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NetworkingSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkManager",
+        "printedName": "NetworkManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkManager",
+                "printedName": "NetworkingSDK.NetworkManager",
+                "usr": "s:13NetworkingSDK14NetworkManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK14NetworkManagerC6sharedACvpZ",
+            "mangledName": "$s13NetworkingSDK14NetworkManagerC6sharedACvpZ",
+            "moduleName": "NetworkingSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkManager",
+                    "printedName": "NetworkingSDK.NetworkManager",
+                    "usr": "s:13NetworkingSDK14NetworkManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK14NetworkManagerC6sharedACvgZ",
+                "mangledName": "$s13NetworkingSDK14NetworkManagerC6sharedACvgZ",
+                "moduleName": "NetworkingSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "session",
+            "printedName": "session",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvp",
+            "mangledName": "$s13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSession",
+                    "printedName": "Foundation.URLSession",
+                    "usr": "c:objc(cs)NSURLSession"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvg",
+                "mangledName": "$s13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSession",
+                    "printedName": "Foundation.URLSession",
+                    "usr": "c:objc(cs)NSURLSession"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvs",
+                "mangledName": "$s13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvs",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvM",
+                "mangledName": "$s13NetworkingSDK14NetworkManagerC7sessionSo12NSURLSessionCvM",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchPopularMovies",
+            "printedName": "fetchPopularMovies(page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[NetworkingSDK.Movie], any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NetworkingSDK.Movie]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Movie",
+                        "printedName": "NetworkingSDK.Movie",
+                        "usr": "s:13NetworkingSDK5MovieV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13NetworkingSDK14NetworkManagerC18fetchPopularMovies4page7Combine12AnyPublisherVySayAA5MovieVGs5Error_pGSi_tF",
+            "mangledName": "$s13NetworkingSDK14NetworkManagerC18fetchPopularMovies4page7Combine12AnyPublisherVySayAA5MovieVGs5Error_pGSi_tF",
+            "moduleName": "NetworkingSDK",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchLatestMovies",
+            "printedName": "fetchLatestMovies(page:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<[NetworkingSDK.Movie], any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NetworkingSDK.Movie]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Movie",
+                        "printedName": "NetworkingSDK.Movie",
+                        "usr": "s:13NetworkingSDK5MovieV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13NetworkingSDK14NetworkManagerC17fetchLatestMovies4page7Combine12AnyPublisherVySayAA5MovieVGs5Error_pGSi_tF",
+            "mangledName": "$s13NetworkingSDK14NetworkManagerC17fetchLatestMovies4page7Combine12AnyPublisherVySayAA5MovieVGs5Error_pGSi_tF",
+            "moduleName": "NetworkingSDK",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchMovieDetails",
+            "printedName": "fetchMovieDetails(movieId:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<NetworkingSDK.MovieDetails, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<NetworkingSDK.MovieDetails, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieDetails",
+                        "printedName": "NetworkingSDK.MovieDetails",
+                        "usr": "s:13NetworkingSDK12MovieDetailsV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13NetworkingSDK14NetworkManagerC17fetchMovieDetails7movieId10completionySi_ys6ResultOyAA0fG0Vs5Error_pGctF",
+            "mangledName": "$s13NetworkingSDK14NetworkManagerC17fetchMovieDetails7movieId10completionySi_ys6ResultOyAA0fG0Vs5Error_pGctF",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13NetworkingSDK14NetworkManagerC",
+        "mangledName": "$s13NetworkingSDK14NetworkManagerC",
+        "moduleName": "NetworkingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkingSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieResponse",
+        "printedName": "MovieResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "page",
+            "printedName": "page",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK13MovieResponseV4pageSivp",
+            "mangledName": "$s13NetworkingSDK13MovieResponseV4pageSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK13MovieResponseV4pageSivg",
+                "mangledName": "$s13NetworkingSDK13MovieResponseV4pageSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "results",
+            "printedName": "results",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[NetworkingSDK.Movie]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Movie",
+                    "printedName": "NetworkingSDK.Movie",
+                    "usr": "s:13NetworkingSDK5MovieV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK13MovieResponseV7resultsSayAA0C0VGvp",
+            "mangledName": "$s13NetworkingSDK13MovieResponseV7resultsSayAA0C0VGvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[NetworkingSDK.Movie]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Movie",
+                        "printedName": "NetworkingSDK.Movie",
+                        "usr": "s:13NetworkingSDK5MovieV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK13MovieResponseV7resultsSayAA0C0VGvg",
+                "mangledName": "$s13NetworkingSDK13MovieResponseV7resultsSayAA0C0VGvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalPages",
+            "printedName": "totalPages",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK13MovieResponseV10totalPagesSivp",
+            "mangledName": "$s13NetworkingSDK13MovieResponseV10totalPagesSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK13MovieResponseV10totalPagesSivg",
+                "mangledName": "$s13NetworkingSDK13MovieResponseV10totalPagesSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalResults",
+            "printedName": "totalResults",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK13MovieResponseV12totalResultsSivp",
+            "mangledName": "$s13NetworkingSDK13MovieResponseV12totalResultsSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK13MovieResponseV12totalResultsSivg",
+                "mangledName": "$s13NetworkingSDK13MovieResponseV12totalResultsSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponse",
+                "printedName": "NetworkingSDK.MovieResponse",
+                "usr": "s:13NetworkingSDK13MovieResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13NetworkingSDK13MovieResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13NetworkingSDK13MovieResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NetworkingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13NetworkingSDK13MovieResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13NetworkingSDK13MovieResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NetworkingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13NetworkingSDK13MovieResponseV",
+        "mangledName": "$s13NetworkingSDK13MovieResponseV",
+        "moduleName": "NetworkingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Movie",
+        "printedName": "Movie",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adult",
+            "printedName": "adult",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV5adultSbvp",
+            "mangledName": "$s13NetworkingSDK5MovieV5adultSbvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV5adultSbvg",
+                "mangledName": "$s13NetworkingSDK5MovieV5adultSbvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdropPath",
+            "printedName": "backdropPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV12backdropPathSSSgvp",
+            "mangledName": "$s13NetworkingSDK5MovieV12backdropPathSSSgvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV12backdropPathSSSgvg",
+                "mangledName": "$s13NetworkingSDK5MovieV12backdropPathSSSgvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "genreIDS",
+            "printedName": "genreIDS",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV8genreIDSSaySiGvp",
+            "mangledName": "$s13NetworkingSDK5MovieV8genreIDSSaySiGvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV8genreIDSSaySiGvg",
+                "mangledName": "$s13NetworkingSDK5MovieV8genreIDSSaySiGvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV2idSivp",
+            "mangledName": "$s13NetworkingSDK5MovieV2idSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV2idSivg",
+                "mangledName": "$s13NetworkingSDK5MovieV2idSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "originalTitle",
+            "printedName": "originalTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV13originalTitleSSvp",
+            "mangledName": "$s13NetworkingSDK5MovieV13originalTitleSSvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV13originalTitleSSvg",
+                "mangledName": "$s13NetworkingSDK5MovieV13originalTitleSSvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overview",
+            "printedName": "overview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV8overviewSSvp",
+            "mangledName": "$s13NetworkingSDK5MovieV8overviewSSvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV8overviewSSvg",
+                "mangledName": "$s13NetworkingSDK5MovieV8overviewSSvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "popularity",
+            "printedName": "popularity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV10popularitySdvp",
+            "mangledName": "$s13NetworkingSDK5MovieV10popularitySdvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV10popularitySdvg",
+                "mangledName": "$s13NetworkingSDK5MovieV10popularitySdvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posterPath",
+            "printedName": "posterPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV10posterPathSSSgvp",
+            "mangledName": "$s13NetworkingSDK5MovieV10posterPathSSSgvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV10posterPathSSSgvg",
+                "mangledName": "$s13NetworkingSDK5MovieV10posterPathSSSgvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "releaseDate",
+            "printedName": "releaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV11releaseDateSSSgvp",
+            "mangledName": "$s13NetworkingSDK5MovieV11releaseDateSSSgvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV11releaseDateSSSgvg",
+                "mangledName": "$s13NetworkingSDK5MovieV11releaseDateSSSgvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV5titleSSSgvp",
+            "mangledName": "$s13NetworkingSDK5MovieV5titleSSSgvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV5titleSSSgvg",
+                "mangledName": "$s13NetworkingSDK5MovieV5titleSSSgvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "video",
+            "printedName": "video",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV5videoSbvp",
+            "mangledName": "$s13NetworkingSDK5MovieV5videoSbvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV5videoSbvg",
+                "mangledName": "$s13NetworkingSDK5MovieV5videoSbvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteAverage",
+            "printedName": "voteAverage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV11voteAverageSdvp",
+            "mangledName": "$s13NetworkingSDK5MovieV11voteAverageSdvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV11voteAverageSdvg",
+                "mangledName": "$s13NetworkingSDK5MovieV11voteAverageSdvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteCount",
+            "printedName": "voteCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK5MovieV9voteCountSivp",
+            "mangledName": "$s13NetworkingSDK5MovieV9voteCountSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK5MovieV9voteCountSivg",
+                "mangledName": "$s13NetworkingSDK5MovieV9voteCountSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Movie",
+                "printedName": "NetworkingSDK.Movie",
+                "usr": "s:13NetworkingSDK5MovieV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13NetworkingSDK5MovieV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13NetworkingSDK5MovieV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NetworkingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13NetworkingSDK5MovieV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13NetworkingSDK5MovieV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NetworkingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13NetworkingSDK5MovieV",
+        "mangledName": "$s13NetworkingSDK5MovieV",
+        "moduleName": "NetworkingSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkingSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieDetails",
+        "printedName": "MovieDetails",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV2idSivp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV2idSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV2idSivg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV2idSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV5titleSSvp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV5titleSSvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV5titleSSvg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV5titleSSvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overview",
+            "printedName": "overview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV8overviewSSvp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV8overviewSSvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV8overviewSSvg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV8overviewSSvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "release_date",
+            "printedName": "release_date",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV12release_dateSSvp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV12release_dateSSvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV12release_dateSSvg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV12release_dateSSvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "runtime",
+            "printedName": "runtime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV7runtimeSivp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV7runtimeSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV7runtimeSivg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV7runtimeSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vote_average",
+            "printedName": "vote_average",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV12vote_averageSdvp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV12vote_averageSdvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV12vote_averageSdvg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV12vote_averageSdvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vote_count",
+            "printedName": "vote_count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV10vote_countSivp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV10vote_countSivp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV10vote_countSivg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV10vote_countSivg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdrop_path",
+            "printedName": "backdrop_path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13NetworkingSDK12MovieDetailsV13backdrop_pathSSSgvp",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV13backdrop_pathSSSgvp",
+            "moduleName": "NetworkingSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13NetworkingSDK12MovieDetailsV13backdrop_pathSSSgvg",
+                "mangledName": "$s13NetworkingSDK12MovieDetailsV13backdrop_pathSSSgvg",
+                "moduleName": "NetworkingSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieDetails",
+                "printedName": "NetworkingSDK.MovieDetails",
+                "usr": "s:13NetworkingSDK12MovieDetailsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13NetworkingSDK12MovieDetailsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NetworkingSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13NetworkingSDK12MovieDetailsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13NetworkingSDK12MovieDetailsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NetworkingSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13NetworkingSDK12MovieDetailsV",
+        "mangledName": "$s13NetworkingSDK12MovieDetailsV",
+        "moduleName": "NetworkingSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 136,
+      "length": 30,
+      "value": "\"https:\/\/api.themoviedb.org\/3\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 34,
+      "value": "\"909594533c98883408adef5d56143539\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/NetworkManager.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 7,
+      "value": "\"en-US\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 413,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/NetworkManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1385,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 255,
+      "length": 13,
+      "value": "\"total_pages\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 297,
+      "length": 15,
+      "value": "\"total_results\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 255,
+      "length": 13,
+      "value": "\"total_pages\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 297,
+      "length": 15,
+      "value": "\"total_results\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 806,
+      "length": 15,
+      "value": "\"backdrop_path\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 11,
+      "value": "\"genre_ids\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 16,
+      "value": "\"original_title\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 980,
+      "length": 13,
+      "value": "\"poster_path\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 1021,
+      "length": 14,
+      "value": "\"release_date\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 1089,
+      "length": 14,
+      "value": "\"vote_average\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 12,
+      "value": "\"vote_count\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 806,
+      "length": 15,
+      "value": "\"backdrop_path\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 11,
+      "value": "\"genre_ids\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 903,
+      "length": 16,
+      "value": "\"original_title\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 980,
+      "length": 13,
+      "value": "\"poster_path\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 1021,
+      "length": 14,
+      "value": "\"release_date\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 1089,
+      "length": 14,
+      "value": "\"vote_average\""
+    },
+    {
+      "filePath": "\/Users\/kushagra\/Documents\/Github Submission\/Framework\/NetworkingSDK\/NetworkingSDK\/Movie.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 12,
+      "value": "\"vote_count\""
+    }
+  ]
+}

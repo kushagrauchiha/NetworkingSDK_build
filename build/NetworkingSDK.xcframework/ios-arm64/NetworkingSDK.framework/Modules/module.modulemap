@@ -1,0 +1,6 @@
+framework module NetworkingSDK {
+  umbrella header "NetworkingSDK.h"
+  export *
+
+  module * { export * }
+}
